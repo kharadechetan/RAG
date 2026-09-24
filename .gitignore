@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+uvicorn.log
+scratch/
+data/
+test_data/
+*.pdf
+eval/dataset.json
+eval/results.json
