@@ -34,6 +34,7 @@ async def stream_message(request: MessageRequest, background_tasks: BackgroundTa
             ):
                 if meta.get("langgraph_node") == "generate_answer":
                     if msg.content:
+                        print(msg.content, end="", flush=True)
                         yield msg.content
 
             # After streaming, get the final state for sources
